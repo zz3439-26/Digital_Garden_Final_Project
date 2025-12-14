@@ -1,0 +1,104 @@
+.container{
+    
+}
+
+.col-md-12, .col-md-4, .col-md-6{
+    border : solid 0px black;
+}
+
+.noPadding{
+    padding : 0px;
+}
+
+.slideImage{
+    height : 850px;
+}
+
+.marginTop{
+    margin-top: 60px;;
+}
+
+.lpadding20{
+    padding-left : 20px;
+}
+
+.customNav{
+    background : black !important;
+}
+
+#mainArea{
+    min-height : 80vh;
+}
+
+body{
+	font-family: montserrat;
+}
+
+.donationAmount{
+    width : 150px;
+    margin : 20px;
+    padding : 20px;
+}
+
+footer{
+    background : black;
+    min-height : 40vh;
+    color : white;
+    padding : 100px;
+}
+
+footer ul{
+    list-style: none;
+    padding : 0px;
+    margin : 0px;
+}
+
+footer ul li{
+    margin : 20px;
+}
+
+footer i{
+    font-size : 25pt;
+    /* margin : 15px; */
+}
+
+.socialDiv{
+    border : solid 0px white;
+    /* width : 100%; */
+}
+
+
+/* MEDIA QUERIES */
+
+/* TABLET  */
+@media only screen 
+and (min-width: 481px) 
+and (max-width: 960px){
+
+    .slideImage{
+        height : 500px;
+    }
+
+    footer{
+        padding: 50px;
+    }
+
+    .footerNav{
+        display : none !important;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 480px){
+    .slideImage{
+        height : 300px;
+    }
+
+    footer{
+        padding: 50px;
+    }
+
+    .footerNav{
+        display : none !important;
+    }
+}
