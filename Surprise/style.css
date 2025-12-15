@@ -10,7 +10,7 @@
 }
 .wrapper {
 	height: 100vh;
-    display: grid; /* this applies only to direct child elements */
+    display: grid; 
     grid-template-columns: repeat(6,1fr); /* three columns */
     grid-template-rows: repeat(6,1fr);
     column-gap: 10px;
@@ -30,7 +30,7 @@
 	grid-template-columns: subgrid;
 }
 
-/* alternative synytax for placing grid items */
+
 .b {
 	background-image: url('media/sun.gif');
     grid-column-start: 2;
