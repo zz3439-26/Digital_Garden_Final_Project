@@ -1,11 +1,14 @@
-const imgContent = document.querySelectorAll('.img-content-hover');
+var $g = document.querySelector(".gallery");
+var $h = document.querySelector(".horizontal");
 
-function showImgContent(e) {
-  for(var i = 0; i < imgContent.length; i++) {
-    x = e.pageX;
-    y = e.pageY;
-    imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+var translate = 0;
+const halfViewport = window.innerWidth / 2;
+window.addEventListener("wheel", (e) => {
+  event.preventDefault();
+  const finalPosition = translate + -e.deltaY;
+  if (finalPosition < halfViewport && finalPosition > (-6 * halfViewport)) {
+    translate += -e.deltaY;
+
+    $h.style.transform = `translate(${translate}px)`;
   }
-};
-
-document.addEventListener('mousemove', showImgContent);
+});
