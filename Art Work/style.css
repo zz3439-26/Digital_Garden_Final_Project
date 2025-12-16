@@ -14,7 +14,7 @@
 
 .horizontal > img {
   width: auto;
-  height: 500px;
+  height: 400px;
   transition: transform 200ms ease-in-out, border-radius 200ms ease-in-out, filter 200ms ease-in-out;
   filter: grayscale(100%);
 }
@@ -39,9 +39,9 @@ body {
   padding: 40px;
 }
 .horizontal img {
-  border: 2px solid #606060;   /* white border */
-  padding: 6px;                /* space between image and border */
-  border-radius: 8px;          /* soft corners */
+  border: 2px solid #5c5c5c;   /* white border */
+               /* space between image and border */
+  
 }
 .horizontal > img + img {
   margin-left: 5vw;
